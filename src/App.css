@@ -95,3 +95,44 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  #children {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10;
+    z-index: 2000;
+    position: absolute;
+    top: 125px;
+    left: 600px;
+  }
+
+   
+   @media only screen and (max-width: 480px) {
+
+     #main {
+       display: flex;
+       justify-content: center;
+       flex-direction: column-reverse;
+     }
+
+     #children {
+       z-index: 2000;
+       position: relative;
+       top: -515px;
+       left: 30px;
+     }
+
+     #cloud2, #cloud1 {
+       display: none;
+     }
+
+     .stage {
+       display: flex
+     }
+
+    
+   }
+  

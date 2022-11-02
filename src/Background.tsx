@@ -34,23 +34,8 @@ export const Background: React.FC<Props> = ({ children }) => {
   }, [])
 
   return (
-    <div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'column',
-          gap: 10,
-          zIndex: 0,
-          position: 'absolute',
-          top: 125,
-          left: 600,
-        }}
-      >
-        {children}
-      </div>
+    <div id='main'>
+      <div id='children'>{children}</div>
       <section className='stage'>
         <svg height='390' width='550' id='mountains'>
           <polygon points='300,390 190,90 320,130 400,340' fill='#5d2042' />
