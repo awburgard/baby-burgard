@@ -111,7 +111,11 @@ body {
 
    
    @media only screen and (max-width: 480px) {
-
+    html,
+    body {
+      height: 100%;
+      zoom: 0.7;
+    }
      #main {
        display: flex;
        justify-content: center;
